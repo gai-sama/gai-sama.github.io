@@ -1,0 +1,145 @@
+#page-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 85px;
+    text-align: center;
+    background-color: rgba(243, 242, 240, 0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.32);
+    min-width: 1160px;
+    z-index: 1000;
+    -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, height 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, height 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, height 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, height 0.2s ease-in-out;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#page-header > div {
+    display: inline-block;
+    width: 63%;
+    min-width: 620px;
+}
+
+#page-header span {
+    float: left;
+    height: 75px;
+    line-height: 75px;
+    padding-left: 51px;
+    vertical-align: middle;
+    color: #1dafed;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: url("../../img/index/logo.png") no-repeat left center;
+}
+
+#page-header .nav {
+    float: right;
+    height: 75px;
+    line-height: 75px;
+    font-size: 14px;
+    margin-right: 25px;
+}
+
+#page-header a {
+    color: #000
+}
+
+#page-header .nav > li > a {
+    color: #999;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+#page-header .nav > li > a:hover {
+    color: #1dafed;
+}
+
+#page-header li {
+    float: left;
+    width: 88px;
+    margin: 0;
+}
+
+#page-header li ul {
+    background-image: url('../../img/subdown.png');
+    background-size: 100%;
+    margin-top: -20px;
+    padding: 8px 1px 0 1px;
+}
+
+#page-header li li {
+    float: none;
+    margin: 0;
+    line-height: 32px;
+    width: 86px;
+    height: 32px;
+    cursor: pointer;
+}
+
+#page-header li li:hover {
+    background-color: #00adef;
+    color: #fff;
+}
+
+#page-header .nav > li.active > a {
+    color: #1dafed !important;
+}
+
+#register-btn {
+    float: right;
+    width: 55px;
+    height: 75px;
+    line-height: 75px;
+}
+
+#register-btn:after {
+    content: " ";
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#register-btn a {
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #fff;
+    background-color: #1dafec;
+}
+
+#register-btn a:hover {
+    text-decoration: underline;
+}
+
+#page-header.fixing {
+    background-color: #fff \0; /* 兼容IE8 */
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.32);
+    height: 72px;
+}
+
+#page-header.fixing span {
+    height: 70px;
+    line-height: 70px;
+}
+
+#page-header.fixing .nav {
+    height: 70px;
+    line-height: 70px;
+}
+
+#page-header.fixing #register-btn {
+    line-height: 70px;
+}

@@ -1,0 +1,99 @@
+
+#more {
+    background-color: #323136;
+    text-align: center;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+#more > .wrapper {
+    margin: auto;
+    padding: 74px 0 70px;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#more > .wrapper > ul {
+    display: inline-block;
+}
+
+#more > .wrapper > ul > li {
+    font-size: 14px;
+    color: #e6e6e6;
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: top;
+}
+
+#more > .wrapper > ul > li > ul {
+    margin-top: 50px;
+}
+
+#more > .wrapper > ul > li > ul, #more > .wrapper a {
+    color: #999;
+}
+
+#more > .wrapper > ul > li > ul > li {
+    line-height: 30px;
+}
+
+#more img {
+    padding-bottom: 12px;
+}
+
+#more i {
+    height: 304px;
+    width: 1px;
+    background-color: #999;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 100px;
+}
+
+#more .contact {
+    width: 230px;
+    white-space: normal;
+}
+
+#more .contact > ul > li {
+    line-height: 30px;
+}
+
+#more .contact > ul > li > a {
+    position: absolute;
+    display: block;
+    top: 3px;
+    left: 130px;
+}
+
+#more .contact > ul > li > a > img {
+    margin: 0;
+    padding: 0;
+
+}
+
+#more > .wrapper > ul > li.focus {
+    margin-right: 0;
+}
+
+#site-info {
+    background-color: #232326;
+    text-align: center;
+    color: #9a9a9a;
+    font-size: 12px;
+    padding: 20px 0;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+#site-info a {
+    color: #9a9a9a;
+}
+
+#site-info img {
+    vertical-align: middle;
+    margin-right: 5px;
+}

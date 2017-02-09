@@ -1,0 +1,16 @@
+.bullet {
+    opacity: 0.01;
+}
+
+.bullet-enter {
+    opacity: 1;
+    position: absolute;
+    left: 1100px;
+}
+
+.bullet-enter.bullet-enter-active {
+    opacity: .5;
+    position: absolute;
+    left: -100px;
+    transition: all 5000ms ease-in;
+}
