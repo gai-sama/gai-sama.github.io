@@ -1,0 +1,97 @@
+
+body {
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+::selection {
+    background: #0090C5;
+    color: #FFFFFF;
+}
+
+::-moz-selection {
+    background: #0090C5;
+    color: #FFFFFF;
+}
+
+
+#page-content {
+    margin-top: 205px;
+    text-align: center;
+    min-width: 1200px;
+}
+
+#page-content > h1 {
+    font-size: 26px;
+    font-weight: normal;
+    color: #434445;
+}
+
+#page-content > h2 {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #9a9a9a;
+}
+
+#page-content .scenes {
+    width: 1200px;
+    margin: 86px auto 0;
+    text-align: left;
+}
+
+#page-content .scenes li > img {
+    float: left;
+}
+
+#page-content .detail {
+    float: right;
+    width: 420px;
+}
+
+#page-content .detail h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #434445;
+    margin-top: 54px;
+}
+
+#page-content .detail p {
+    color: #656667;
+    line-height: 30px;
+    margin-top: 19px;
+}
+
+#page-content .detail a {
+    display: block;
+    width: 130px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: 0;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 17px;
+    background-color: #1dafec;
+    margin-top: 13px;
+}
+
+#page-content .detail a:hover {
+    text-decoration: underline;
+}
+
+#page-content .detail img {
+    display: block;
+    margin-top: 15px;
+}
+
+#page-content .detail span {
+    font-size: 16px;
+    color: #656667;
+    margin-top: 10px;
+}
+
+

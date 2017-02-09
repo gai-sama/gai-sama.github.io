@@ -1,0 +1,344 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 760px;
+    position: relative;
+    min-width: 1200px;
+    /*position: relative;*/
+    /*box-sizing: border-box;*/
+    /*overflow: hidden;*/
+    /*min-width: 620px;*/
+}
+
+::selection {
+    background: #0090C5;
+    color: #FFFFFF;
+}
+
+::-moz-selection {
+    background: #0090C5;
+    color: #FFFFFF;
+}
+
+ul {
+    list-style: none;
+}
+
+
+#page-content {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    right: 0;
+    width: 570px;
+    height: 465px;
+    margin-top: -233px;
+    margin-left:-285px;
+    z-index: 10;
+    overflow: hidden;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#scene-panel {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+#scene-panel > * {
+    left: 100%;
+    position: absolute;
+}
+
+#scene-panel .scene-0{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#scene-panel .scene-0 img {
+    width: 110px;
+}
+
+#scene-panel .scene-0 h1 {
+    font-size: 48px;
+    letter-spacing: 30px;
+    margin-left: 30px;
+    color: #333;
+    font-weight: normal;
+}
+
+#scene-panel .scene-0 h2{
+    font-size: 26px;
+    letter-spacing: 2px;
+    margin-left: 5px;
+    color: #666;
+    font-weight: normal;
+}
+
+#scene-panel .scene-1{
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#scene-panel .scene-1 img {
+    width: 110px;
+    float: left;
+    margin: 90px 90px 0 80px;
+}
+
+#scene-panel .scene-1 p {
+    float: right;
+    margin-top: 80px;
+    font-size: 17px;
+    text-align: left;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+
+#scene-panel .scene-1 p span {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #444;
+    font-weight: normal;
+    text-align: left;
+}
+
+#scene-panel .scene-2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#scene-panel .scene-2 img {
+    width: 230px;
+    position: absolute;
+    top: 0;
+    left: 170px;
+    opacity: 0.1;
+    filter: alpha(opacity=10)\0; /* 兼容IE8 */
+}
+
+#scene-panel .scene-2 h1 {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0 30px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #444;
+    font-weight: normal;
+}
+
+#scene-panel .scene-2 p {
+    text-align: left;
+    font-size: 18px;
+    color: #666;
+    line-height: 36px;
+
+    display: inline-block;
+}
+
+#slider-bar {
+    width: 162px;
+    font-size: 0;
+    margin: 14px auto 0;
+}
+
+#slider-bar li {
+    width: 44px;
+    height: 4px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #ececec;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+#slider-bar li i {
+    width: 44px;
+    height: 4px;
+    display: block;
+    background-color: #989898;
+    position: absolute;
+    left: -44px;
+}
+
+#page-content > button {
+    font-size: 18px;
+    color: #1dafec;
+    text-align: center;
+    width: 313px;
+    height: 52px;
+    line-height: 48px;
+    margin: 51px auto 0;
+    border: 1px solid #1dafec;
+    padding: 1px;
+    border-radius: 28px;
+    background: none;
+    display: block;
+    -webkit-transition: all ease-out .3s;
+    -moz-transition: all ease-out .3s;
+    -o-transition: all ease-out .3s;
+    transition: all ease-out .3s;
+}
+
+#page-content > button:hover {
+    border-color: #1dafec;
+    background-color: #1dafec;
+    color: #fff;
+}
+
+#page-content .client-info {
+    width: 317px;
+    margin: 20px auto 0;
+    color: #989898;
+    font-size: 16px;
+}
+
+#page-content .version {
+    float: left;
+}
+
+#page-content .time {
+    float: right;
+}
+
+.sky {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 447px;
+    background: url(../img/download/sky.jpg) repeat-x 0 0;
+}
+
+.cloud1 {
+    position: absolute;
+    width: 171px;
+    height: 104px;
+    left: 20%;
+    bottom: 22%;
+    background: url(../img/download/cloud1.png) no-repeat;
+}
+
+.cloud2 {
+    position: absolute;
+    width: 171px;
+    height: 104px;
+    bottom: 14%;
+    right: 25%;
+    background: url(../img/download/cloud2.png) no-repeat;
+}
+
+.plane {
+    position: absolute;
+    left: 50%;
+    margin-left: -117px;
+    bottom: 5%;
+    width: 214px;
+    height: 148px;
+    background: url(../img/download/plane.png) repeat-x -10px -45px;
+}
+
+.plane .propeller {
+    position: absolute;
+    top: 40px;
+    left: -5px;
+    width: 40px;
+    height: 88px;
+    overflow: hidden;
+    background: url(../img/download/propeller.png) repeat-x -43px 0;
+}
+
+#sub-banner {
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    opacity:0.7;
+    background-color:#000;
+    width:100%;
+    height:80px;
+    font-size:20px;
+    position:fixed;
+    top:85px;
+    text-align:center;
+}
+.sub-option{
+    float:left;
+    padding:10px 2px 3px 2px;
+    height:24px;
+    color:#fff;
+    font-size:16px;
+    margin:15px 50px 0 10px;
+    border-bottom:3px solid #000;
+    font-weight:100;
+    cursor:pointer;
+}
+.sub-option:hover{
+    border-bottom:3px solid #fff;
+}
+
+@media screen and (max-height: 750px) {
+    #scene-panel {
+        height: 220px;
+    }
+
+    #scene-panel .scene-0 img{
+        width: 100px;
+    }
+
+    #scene-panel .scene-0 h1 {
+        font-size: 40px;
+    }
+
+    #scene-panel .scene-0 h2 {
+        font-size: 25px;
+    }
+
+    #scene-panel .scene-1 img {
+        width: 100px;
+        margin: 54px 100px 0 80px;
+    }
+
+    #scene-panel .scene-1 p {
+        margin-top: 38px;
+    }
+
+    #scene-panel .scene-2 img {
+        width: 195px;
+        left: 187px;
+    }
+
+    #scene-panel .scene-2 h1 {
+        margin: 10px 0 10px;
+        font-size: 27px;
+    }
+
+    #scene-panel .scene-2 p {
+        font-size: 17px;
+    }
+
+    #page-content > button {
+        font-size: 17px;
+        width: 283px;
+        height: 48px;
+        line-height: 44px;
+        margin-top: 35px;
+    }
+
+    #page-content .client-info{
+        width: 283px;
+    }
+
+}

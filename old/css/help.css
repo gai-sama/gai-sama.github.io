@@ -1,0 +1,291 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "微软雅黑", "Microsoft YaHei", "SimHei", "YouYuan", sans-serif;
+}
+
+body {
+    background: #fff url(../img/help/banner.jpg) top center no-repeat;
+    background-size: 1920px 486px;
+    min-width: 900px;
+    position: relative;
+    overflow-y: scroll;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul {
+    list-style: none;
+}
+
+::selection {
+    background: #0090C5;
+    color: #FFFFFF;
+}
+
+::-moz-selection {
+    background: #0090C5;
+    color: #FFFFFF;
+}
+
+.app-ver {
+    border: 1px solid #4a76fd;
+    position: absolute;
+    top: 265px;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 150px;
+    height: 37px;
+    line-height: 37px;
+    margin: auto;
+    border-radius: 11px;
+    text-align: center;
+    color: #4a76fd;
+    font-weight: bold;
+    cursor: default;
+}
+
+.page-content {
+    width: 64%;
+    min-width: 1050px;
+    position: relative;
+    top: 344px;
+    margin: 0 auto;
+}
+
+.page-content:after {
+    content: " ";
+    display: block;
+    clear: both;
+    width: 0;
+    overflow: hidden;
+}
+
+#aside {
+    width: 20%;
+    text-align: center;
+    color: #fff;
+    float: left;
+}
+
+#aside li {
+    margin: 0;
+    position: relative;
+    left: 0;
+    z-index: 10;
+    cursor: pointer;
+    list-style: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+#aside a {
+    color: #fff;
+    padding: 0 13% 0 15%;
+    line-height: 64px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #00adef;
+    position: relative;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.item a {
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.item ul {
+    display: none;
+}
+
+#aside .item.active a {
+    background-color: #0196ce;
+}
+
+#aside .sub-item a {
+    background-color: #0196ce;
+}
+
+#aside .sub-item.active {
+    left: 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    z-index: 5;
+}
+
+#aside .sub-item.active a {
+    background-color: #0090c5;
+}
+
+a i {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/help/opened.png) no-repeat;
+    position: absolute;
+    top: 24px;
+    left: 85%;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.opened > a i {
+    transform: rotate(0deg);
+}
+
+.closed > a i {
+    transform: rotate(-90deg);
+}
+
+#content-panel {
+    width: 80%;
+    background-color: #fff;
+    float: right;
+    position: relative;
+    margin-bottom: 88px;
+    -moz-user-select: initial;
+    -webkit-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial;
+}
+
+.panel-header {
+    background-color: #eaeaea;
+}
+
+.article-title {
+    display: block;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    width: 240px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.panel-content {
+    line-height: 20px;
+    opacity: 1;
+    margin: 40px 30px;
+    min-height: 190px;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.panel-content img {
+    max-width: 100%;
+    margin: 5px auto;
+}
+
+.panel-content > dl > dt {
+    font-weight: bold;
+    margin: 15px 0 30px;
+}
+
+.panel-content > dl > dd {
+    margin-bottom: 40px;
+}
+
+.panel-content dd ul {
+    list-style: none;
+    text-indent: 2em;
+}
+
+.panel-content p {
+    margin: 20px 0;
+}
+
+table tbody th {
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+}
+
+.loading-mask .loading {
+    display: block;
+}
+
+.loading-mask .panel-content {
+    opacity: 0.3;
+}
+
+.loading {
+    position: absolute;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 10px;
+    top: 300px;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.loading > div {
+    background-color: #0090C5;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: start 1.2s infinite ease-in-out;
+    animation: start 1.2s infinite ease-in-out;
+}
+
+.loading .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.loading .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.loading .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.loading .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes start {
+    0%, 40%, 100% {
+        -webkit-transform: scaleY(0.4)
+    }
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes start {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+    }
+    20% {
+        transform: scaleY(1.0);
+    }
+}
+
+/*解决IE在slideDown时闪动的bug*/
+.no-position, .no-position li, .no-position li a {
+    position: static;
+}

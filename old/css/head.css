@@ -1,0 +1,263 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 760px;
+    position: relative;
+    min-width: 1200px;
+}
+
+::selection {
+    background: #0090C5;
+    color: #FFFFFF;
+}
+
+::-moz-selection {
+    background: #0090C5;
+    color: #FFFFFF;
+}
+
+ul {
+    list-style: none;
+}
+
+#page-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 85px;
+    text-align: center;
+    background-color: rgba(243, 242, 240, 0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.32);
+    min-width: 1160px;
+    z-index: 1000;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#page-header > .wrapper {
+    display: inline-block;
+    width: 63%;
+    min-width: 620px;
+}
+
+#page-header > .wrapper > span {
+    float: left;
+    height: 75px;
+    line-height: 75px;
+    padding-left: 51px;
+    vertical-align: middle;
+    color: #1dafed;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: url("../img/index/logo.png") no-repeat left center;
+}
+
+#page-header > .wrapper > .nav {
+    float: right;
+    height: 75px;
+    line-height: 75px;
+    font-size: 14px;
+    margin-right: 25px;
+}
+
+#page-header > .wrapper > .nav ul a {
+    color: #999;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+#page-header > .wrapper > .nav ul a:hover {
+    color: #1dafed;
+}
+
+#page-header > .wrapper > .nav li {
+    float:left;
+    width:88px;
+    margin: 0;
+}
+
+
+#page-header > .wrapper > .nav li ul{
+    background-image: url('../img/subdown.png');
+    background-size:100%;
+    margin-top:-5px;
+    padding:8px 1px 0 1px;
+    display:none;
+}
+#page-header > .wrapper > .nav li ul li{
+    float:none;
+    margin:0;
+    line-height:32px;
+    width:86px;
+    height:32px;
+    cursor:pointer;
+}
+#page-header > .wrapper > .nav li ul li:hover{
+    background-color:#00adef;
+    color:#fff;
+}
+
+#page-header > .wrapper > .nav .active > a {
+    color: #1dafed;
+}
+
+#register-btn {
+    float: right;
+    width: 55px;
+    height: 75px;
+}
+
+#register-btn:after {
+    content: " ";
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#register-btn a {
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #fff;
+    background-color: #1dafec;
+}
+
+#register-btn a:hover {
+    text-decoration: underline;
+}
+
+#page-header.fixing {
+    background-color: #fff\0; /* 兼容IE8 */
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.32);
+    height: 72px;
+}
+
+#page-header.fixing > .wrapper > span {
+    height: 70px;
+    line-height: 70px;
+}
+
+#page-header.fixing > .wrapper > .nav {
+    height: 70px;
+    line-height: 70px;
+}
+
+#page-header.fixing #register-btn {
+    height: 70px;
+}
+
+
+#footer {
+    background-color: #232326;
+    text-align: center;
+    color: #9a9a9a;
+    font-size: 12px;
+    padding: 20px 0;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+#footer a {
+    color: #9a9a9a;
+}
+
+#footer img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+#more {
+    background-color: #323136;
+    text-align: center;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+#more > .wrapper {
+    margin: auto;
+    padding: 74px 0 70px;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#more > .wrapper > ul {
+    display: inline-block;
+}
+
+#more > .wrapper > ul > li {
+    font-size: 14px;
+    color: #e6e6e6;
+    display: inline-block;
+    margin-right: 100px;
+    vertical-align: top;
+}
+
+#more > .wrapper > ul > li > ul {
+    margin-top: 50px;
+}
+
+#more > .wrapper > ul > li > ul, #more > .wrapper a {
+    color: #999;
+}
+
+#more > .wrapper > ul > li > ul > li {
+    line-height: 30px;
+}
+
+#more img {
+    padding-bottom: 12px;
+}
+
+#more i {
+    height: 304px;
+    width: 1px;
+    background-color: #999;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 100px;
+}
+
+#more .contact {
+    width: 230px;
+    white-space: normal;
+}
+
+#more .contact > ul > li{
+    line-height:30px;
+}
+#more .contact > ul > li > a{
+    position:absolute;
+    display:block;
+    top:3px;
+    left:130px;
+}
+#more .contact > ul > li > a > img{
+    margin:0;
+    padding: 0;
+
+}
+
+#more > .wrapper > ul > li.focus {
+    margin-right: 0;
+}
+/*解决IE在slideDown时闪动的bug*/
+.no-position, .no-position li, .no-position li a {
+    position: static;
+}

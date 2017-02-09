@@ -1,0 +1,159 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "微软雅黑", "Microsoft YaHei", "SimHei", "YouYuan", sans-serif;
+}
+
+body {
+    background: #fff url(../img/help/banner.jpg) top center no-repeat;
+    background-size: 1920px 486px;
+    min-width: 900px;
+    position: relative;
+    overflow-y: scroll;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul {
+    list-style: none;
+}
+
+::selection {
+    background: #0090C5;
+    color: #FFFFFF;
+}
+
+::-moz-selection {
+    background: #0090C5;
+    color: #FFFFFF;
+}
+
+#page-content{
+    width:900px;
+    min-height:100px;
+    padding:30px 0;
+    position:absolute;
+    top:100px;
+    left:50%;
+    margin-left:-450px;
+}
+#app-title{
+    width:280px;
+    height:68px;
+    margin-left:310px;
+    font-size:46px;
+    line-height:68px;
+    color:#333333;
+    background: url('../img/download/logo-icon.png') top left no-repeat;
+    background-size:60px 68px;
+}
+#time-box{
+    width:30px;
+    min-height:60px;
+    margin:60px auto 0 435px;
+    position:relative;
+    padding:20px 0;
+}
+.time-line{
+    background-color:#00adef;
+    width:4px;
+    margin-left:13px;
+}
+.cirqueB{
+    position:absolute;
+    width:30px;
+    height:30px;
+    background-image:url('../img/version/cirqueB.png');
+}
+.cirqueS{
+    position:absolute;
+    width:14px;
+    height:14px;
+    background-image:url('../img/version/cirqueS.png');
+    left:8px;
+}
+.boxFirst{
+    position:absolute;
+    width:392px;
+    min-height:30px;
+    background-image:url('../img/version/blueArrow.png');
+    background-repeat: no-repeat;
+    background-position:380px 10px;
+    left:35px;
+    color:#fff;
+}
+.boxLeft{
+    position:absolute;
+    width:392px;
+    min-height:30px;
+    background-image:url('../img/version/greyArrowL.png');
+    background-repeat: no-repeat;
+    background-position:380px 10px;
+    left:35px;
+    color:#666666;
+}
+.boxRight{
+    position:absolute;
+    width:392px;
+    min-height:30px;
+    background-image:url('../img/version/greyArrowR.png');
+    background-repeat: no-repeat;
+    background-position:1px 10px;
+    left:480px;
+    color:#666666;
+}
+.bubbleFirst{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:#00adef;
+    width:320px;
+    padding:20px 30px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+.bubbleLeft{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:#e6e7eb;
+    width:320px;
+    padding:20px 30px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+.bubbleRight{
+    position:absolute;
+    top:0;
+    left:12px;
+    background-color:#e6e7eb;
+    width:320px;
+    padding:20px 30px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+.versionCode{
+    width:300px;
+    height:30px;
+    font-size:22px;
+}
+.versionLog{
+    width:300px;
+    min-height:30px;
+    font-size:12px;
+    line-height:30px;
+    margin-top:10px;
+}
+
+
+
+
+
+
+
+
