@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Apple LiGothic Medium", "YouYuan", "Microsoft YaHei", "SimHei", sans-serif;
+}
+
+body {
+    background-size: 100% 100%;
+    background: url(../img/register/bg.jpg) fixed center;
+    text-align: center;
+    min-width: 310px;
+}
+
+.support {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: -8px;
+}
+
+.dialog {
+    width: 330px;
+    padding: 10px 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dialog .header {
+    width: 100%;
+    text-align: center;
+    height: 160px;
+}
+
+.dialog .header img {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.dialog .content {
+    margin: 60px 0 20px 0;
+}
+
+.input-group input {
+    color: #666;
+    border: 1px;
+    border-radius: 2px;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: "Apple LiGothic Medium", "YouYuan", "Microsoft YaHei", "SimHei", sans-serif;
+    vertical-align: middle;
+    padding-left: 50px;
+    outline: none;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255); /*不支持rgba的浏览器*/
+    background: rgba(255, 255, 255, .4); /*支持rgba的浏览器*/
+    background:transparent\0;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66ffffff, endColorstr=#66ffffff)\0; /*IE8支持*/
+}
+
+.input-group:nth-child(n+2) input:focus {
+    background: rgba(255, 255, 255, 0.6) !important;
+}
+
+.input-group {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.input-group:nth-child(1) label {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    color: #444;
+    line-height: 50px;
+    float: left;
+}
+
+#identity {
+    float: right;
+    padding: 0;
+    text-align: center;
+    width: 79%;
+    color: #666;
+    cursor: pointer;
+}
+
+#down-btn {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    border-width: 10px 10px 0;
+    border-color: #999 rgba(255, 255, 255, 0);
+}
+
+#down-btn.active {
+    border-color: #444 rgba(255, 255, 255, 0);
+}
+
+#options {
+    background-color: #FFF;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    font-size: 16px;
+    color: #CCC;
+    cursor: pointer;
+    z-index: 10;
+    width: 79%;
+    text-align: center;
+    display: none;
+}
+
+#options li {
+    list-style: none;
+    overflow: hidden;
+    height: 35px;
+    line-height: 35px;
+    color: #737373;
+}
+
+#options li:hover {
+    background-color: #CCC;
+}
+
+.input-group > i {
+    content: " ";
+    display: inline-block;
+    width: 32px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background: url(../img/register/desc_icon.png) no-repeat;
+}
+
+.input-group.group-a > i {
+    background: none;
+}
+
+.input-group.group-b > i {
+    background-position: center 0;
+}
+
+.input-group.group-c > i {
+    background-position: center -50px;
+}
+
+.input-group.group-d > i {
+    background-position: center -50px
+}
+
+.input-group.group-e > i {
+    background-position: center -100px
+}
+
+#code-img {
+    width: 48%;
+    height: 100%;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+#code-btn {
+    width: 48%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    padding: 2px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.5) !important;
+    font-size: 16px;
+    font-family: "Apple LiGothic Medium", "YouYuan", "Microsoft YaHei", "SimHei", sans-serif;
+    outline: none;
+    cursor: pointer;
+    color: #666;
+}
+
+#code-btn:active {
+    padding: 3px 1px 1px 3px;
+    background: white !important;
+}
+
+.dialog .footer {
+    width: 100%;
+    text-align: left;
+}
+
+#agree {
+    display: none;
+}
+
+#agree:checked + #checkbox {
+    background-position: 0 -17px;
+}
+
+#checkbox {
+    color: #545350;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 20px;
+    background: url(../img/register/tips_icon.png) no-repeat 0 0;
+    vertical-align: middle;
+}
+
+#checkbox .link {
+    color: #0FADD4;
+    cursor: pointer;
+}
+
+#register-btn {
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    padding: 8px;
+    margin-top: 6%;
+    background-color: #F8F5F0;
+    color: #444;
+    cursor: pointer;
+    border: 1px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.4) !important;
+    filter: Alpha(opacity=80);
+    background: #fff;
+    box-sizing: border-box;
+}
+
+#register-btn:active {
+    padding: 9px 7px 7px 9px;
+}
+
+#register-btn.active {
+    background: white !important;
+}
+
+#tips {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #E40000;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 200ms;
+}
+
+#tips span {
+    background: url(../img/register/tips_icon.png) no-repeat 0 -33px;
+    display: inline-block;
+    padding-left: 25px;
+}
+
+@media screen and (max-width: 500px) , screen and (max-height: 760px) {
+    .dialog {
+        width: 300px;
+    }
+
+    .dialog .header {
+        height: 145px;
+    }
+
+    .dialog .content {
+        margin: 40px 0 10px 0;
+    }
+
+    .input-group {
+        height: 40px;
+        margin-top: 25px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    .input-group:nth-child(2):after {
+        background-position: center -5px;
+    }
+
+    .input-group:nth-child(3):after {
+        background-position: center -55px;
+    }
+
+    .input-group:nth-child(4):after {
+        background-position: center -55px;
+    }
+
+    .input-group:nth-child(5):after {
+        background-position: center -105px;
+    }
+
+    #options {
+        top: 40px;
+    }
+
+    #down-btn {
+        top: 15px;
+    }
+
+    .input-group:nth-child(1) label {
+        line-height: 40px;
+        font-size: 21px;
+    }
+
+    #code-btn {
+        font-size: 15px;
+    }
+
+    #register-btn {
+        font-size: 21px;
+    }
+
+}

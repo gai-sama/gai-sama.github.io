@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="css/register.css">
+    <title>注册</title>
+</head>
+<body class="hiragino-sans">
+<div class="dialog">
+    <div class="header">
+        <img src="img/register/logo.png" alt="logo">
+    </div>
+    <div class="content">
+        <div class="input-group group-a">
+            <label for="identity">我是</label>
+            <input type="text" id="identity" title="" readonly="readonly" tabindex="-1" placeholder="请选择您的身份"><i></i>
+            <span id="down-btn"></span>
+            <ul id="options">
+                <li id="op_1">个人业主高手</li>
+                <li id="op_2">设计师神隐</li>
+                <li id="op_3">装饰企业大师</li>
+                <li id="op_4">建材业侠客</li>
+                <li id="op_5">房产界英雄</li>
+                <li id="op_6">其他壮士</li>
+            </ul>
+        </div>
+        <div class="input-group group-b">
+            <input type="tel" placeholder="输入手机号" id="phone" title=""><i></i>
+        </div>
+        <div class="input-group group-c">
+            <input type="text" placeholder="输入图片验证码" id="img-code"><i></i>
+            <img id="code-img" src="img/register/temp.png" title="点击刷新">
+        </div>
+        <div class="input-group group-d">
+            <input type="text" placeholder="输入验证码" id="msg-code"><i></i>
+            <button id="code-btn" tabindex="-1">获取验证码</button>
+        </div>
+        <div class="input-group group-e">
+            <input type="password" placeholder="输入密码" id="password" title=""><i></i>
+        </div>
+
+    </div>
+    <div class="footer">
+        <input type="checkbox" title="" id="agree" checked="checked">
+        <label for="agree" id="checkbox">我同意<span class="link">《场景大师使用协议》</span></label>
+        <div id="register-btn">注册</div>
+        <div id="tips"><span>错误内容</span></div>
+    </div>
+</div>
+<div class="support"></div>
+<script src="js/register.js"></script>
+</body>
+</html>

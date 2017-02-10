@@ -1,0 +1,61 @@
+
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+    display: inline-block;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    border-radius: 0;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    transform: rotate(45deg);
+    transform-origin: center;
+    margin: 0;
+}
+
+#fp-nav ul li a.active,
+.fp-slidesNav ul li a.active,
+#fp-nav ul li:hover a.active,
+.fp-slidesNav ul li:hover a.active {
+    border: 1px solid #00AEEF;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    border-radius: 0;
+    background-color: #08AEEE;
+    width: 8px;
+    height: 8px;
+    transform: rotate(0deg);
+    transform-origin: center;
+    margin: 0;
+    left: 5px;
+    top: 5px;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    left: 5px;
+    top: 5px;
+}
+
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+    transform: rotate(0deg);
+    margin: 0;
+}
